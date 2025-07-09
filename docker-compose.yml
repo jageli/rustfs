@@ -1,0 +1,10 @@
+services:
+  rustfs:
+    image: quay.io/rustfs/rustfs
+    container_name: rustfs
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      -  /data:/data
